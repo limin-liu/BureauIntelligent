@@ -6,19 +6,19 @@
 
 <title>CO Sensor Data</title>
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
+
 <script type="text/javascript" language="javascript" src="js/jquery_v1.12.4.js"></script>
 <script type="text/javascript" language="javascript" src="js/jquery.dataTables.js"></script>
 <script type="text/javascript" language="javascript" class="init">
 
 $(document).ready(function() {
 $('#Temperature').dataTable( {
-    "aaSorting": [ [0,'asc'], [1,'desc'] ],
-	"aProcessing": true,
-	"aServerSide": true,
-	"ajax": "tableCO.php",
+    "aaSorting": [ [0,'desc'], [1,'desc'] ],
+	
 } );
 
 $('#Temperature').each(function(){
@@ -59,6 +59,63 @@ $('#Temperature').each(function(){
 					
 					</tr>
 					</thead>
+					<tbody>
+					
+					
+					<tr>
+					<td>8th Jan 2017</td>
+					<td>22:38:52</td>
+					<td>300</td>
+					</tr>
+					
+					<tr>
+					<td>8th Jan 2017</td>
+					<td>23:00:00</td>
+					<td>240</td>
+					</tr>
+					
+					<tr>
+					<td>8th Jan 2017</td>
+					<td>22:46:58</td>
+					<td>10</td>
+					</tr>
+					
+					
+					<tr>
+					<td>27th Jan 2017</td>
+					<td>15:47:36</td>
+					<td>80</td>
+					</tr>
+					
+					<tr>
+					<td>27th Jan 2017</td>
+					<td>20:50:50</td>
+					<td>1000</td>
+					</tr>
+					
+					<tr>
+					<td>27th Jan 2017</td>	
+					<td>00:50:59</td>
+					<td>800</td>
+					</tr>
+					
+					
+					
+					<tr>
+					<td>15th Nov 2016</td>	
+					<td>23:00:00</td>
+					<td>500</td>
+					</tr>
+					
+					
+					<tr>
+					<td>14th Nov 2016</td>
+					<td>23:00:00</td>
+					<td>800</td>
+					</tr>
+					
+					</tbody>		
+			
 					</table>
 				</div>
 			</div>

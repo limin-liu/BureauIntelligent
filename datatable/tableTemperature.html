@@ -6,23 +6,24 @@
 
 <title>Temperature/Humidite Sensor Data</title>
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
 <script type="text/javascript" language="javascript" src="js/jquery_v1.12.4.js"></script>
 <script type="text/javascript" language="javascript" src="js/jquery.dataTables.js"></script>
+<
+
+
+
 <script type="text/javascript" language="javascript" class="init">
 
 $(document).ready(function() {
 $('#Temperature').dataTable( {
 	"aaSorting": [ [0,'asc'], [1,'desc'] ],   //按日期及时间倒序显示
-	"aProcessing": true,
-	"aServerSide": true,
-	"ajax": "tableTemperature.php",
-	
 } );
 
-=
+
 $('#Temperature').each(function(){
 				var datatable = $(this);
 				// SEARCH - Add the placeholder for Search and Turn this into in-line form control
@@ -56,13 +57,154 @@ $('#Temperature').each(function(){
             
 					<table id="Temperature" class="table table-hover table-striped table-bordered text-center table-list" cellspacing="0" width="100%" style="border-radius: 5px;">
 					<thead>
-					<tr>
-					<th class="text-center">Date</th>
-					<th class="text-center">Time</th>
-					<th class="text-center">Temperature(°C)</th>
-					<th class="text-center">Humidite(%)</th>
-					</tr>
+						<tr>
+							<th class="text-center">Date</th>
+							<th class="text-center">Time</th>
+							<th class="text-center">Temperature(°C)</th>
+							<th class="text-center">Humidite(%)</th>
+						</tr>
 					</thead>
+					<tbody>
+						<tr>
+								<td>1th Jan 2017</td>
+								<td>10:48:20</td>	
+								<td>40</td>	
+								<td>50</td>
+						</tr>
+						<tr>
+								<td>31th Dec 2016</td>
+								<td>12:56:18</td>
+								<td>33</td>
+								<td>48</td>
+						</tr>
+						<tr>
+								<td>29th Dec 2016</td>
+								<td>11:52:08</td>
+								<td>32</td>
+								<td>47.2</td>
+						</tr>
+						<tr>
+								<td>29th Dec 2016</td>
+								<td>10:36:14</td>
+								<td>30</td>
+								<td>46.5</td>
+						</tr>
+						<tr>
+								<td>29th Dec 2016</td>
+								<td>10:26:17</td>
+								<td>33</td>
+								<td>47</td>
+						</tr>
+						<tr>
+								<td>15th Dec 2016</td>
+								<td>18:16:38</td>
+								<td>32</td>
+								<td>49</td>
+						</tr>
+						<tr>
+								<td>15th Dec 2016</td>
+								<td>17:56:34</td>
+								<td>33.5</td>
+								<td>50</td>
+						</tr>
+						<tr>
+								<td>15th Dec 2016</td>
+								<td>17:54:30</td>
+								<td>33.2</td>
+								<td>49.1</td>
+						</tr>
+						<tr>
+								<td>15th Dec 2016</td>
+								<td>17:53:16</td>
+								<td>33.4</td>
+								<td>49.3</td>
+						</tr>
+						<tr>
+								<td>15th Dec 2016</td>
+								<td>17:51:37</td>
+								<td>33.5</td>
+								<td>49.6</td>
+						</tr>
+						<tr>
+								<td>9th Dec 2016</td>
+								<td>02:08:18</td>
+								<td>40</td>
+								<td>48.1</td>
+						</tr>
+						<tr>
+								<td>9th Dec 2016</td>
+								<td>02:06:08</td>
+								<td>40</td>
+								<td>48.3</td>
+						</tr>
+						<tr>
+								<td>3th Dec 2016</td>
+								<td>07:44:19</td>
+								<td>23</td>
+								<td>60</td>
+						</tr>
+						<tr>
+								<td>3th Dec 2016</td>
+								<td>07:42:19</td>
+								<td>21.4</td>
+								<td>60</td>
+						</tr>
+						<tr>
+								<td>3th Dec 2016</td>
+								<td>07:34:19</td>
+								<td>21.4</td>
+								<td>44.3</td>
+						</tr>
+						<tr>
+								<td>1th Dec 2016</td>
+								<td>05:28:39</td>
+								<td>28.8</td>
+								<td>47.8</td>
+						</tr>
+						<tr>
+								<td>1th Dec 2016</td>
+								<td>05:24:48</td>
+								<td>28.8</td>
+								<td>51</td>
+						</tr>
+						<tr>
+								<td>1th Dec 2016</td>
+								<td>05:17:01</td>
+								<td>28.8</td>
+								<td>48.6</td>
+						</tr>
+						<tr>
+								<td>1th Dec 2016</td>
+								<td>05:15:09</td>
+								<td>28.9</td>
+								<td>50.7</td>
+						</tr>
+						<tr>
+								<td>1th Dec 2016</td>
+								<td>05:13:53</td>
+								<td>28.9</td>
+								<td>49.8</td>
+						</tr>
+						<tr>
+								<td>1th Dec 2016</td>
+								<td>05:09:27</td>
+								<td>30</td>
+								<td>52.3</td>
+						</tr>
+						<tr>
+								<td>1th Dec 2016</td>
+								<td>05:05:15</td>
+								<td>30</td>
+								<td>50.2</td>
+						</tr>
+						<tr>
+								<td>1th Dec 2016</td>
+								<td>05:04:19</td>
+								<td>30.2</td>
+								<td>47.6</td>
+						</tr>
+						
+					</tbody>
 					</table>
 				</div>
 			</div>

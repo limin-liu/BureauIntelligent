@@ -7,18 +7,19 @@
 <title>Dust and Particles Sensor Data</title>
 
 
-<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
+
 <script type="text/javascript" language="javascript" src="js/jquery_v1.12.4.js"></script>
 <script type="text/javascript" language="javascript" src="js/jquery.dataTables.js"></script>
 <script type="text/javascript" language="javascript" class="init">
 
 $(document).ready(function() {
 $('#Temperature').dataTable( {
-	"aaSorting": [ [0,'asc'], [1,'desc'] ],
-	"aProcessing": true,
-	"aServerSide": true,
-	"ajax": "tableDust.php",
+	"aaSorting": [ [0,'desc'], [1,'desc'] ],
+	
 } );
 
 $('#Temperature').each(function(){
@@ -55,10 +56,53 @@ $('#Temperature').each(function(){
 					<tr>
 					<th class="text-center">Date</th>
 					<th class="text-center">Time</th>
-					<th class="text-center">Temperature(particules/litre)</th>
-					
+					<th class="text-center">Temperature(particules/litre)</th>			
 					</tr>
 					</thead>
+					
+					<tbody>
+					
+					<tr>
+					<td>27th Jan 2017</td>
+					<td>00:55:16</td>
+					<td>94</td>
+					</tr>
+					
+					
+					<tr>
+					<td>9th Jan 2017</td>
+					<td>15:49:30</td>
+					<td>40</td>
+					</tr>
+					
+					<tr>
+					<td>3th Jan 2017</td>
+					<td>16:39:10</td>
+					<td>34</td>
+					</tr>
+					
+					<tr>
+					<td>17th Nov 2016</td>	
+					<td>22:00:00</td>
+					<td>66</td>
+					</tr>
+					
+					
+					
+					<tr>
+					<td>14th Nov 2016</td>	
+					<td>23:00:00</td>
+					<td>87</td>
+					</tr>
+					
+					
+					<tr>
+					<td>27th Oct 2016</td>
+					<td>08:45:46</td>
+					<td>74</td>
+					</tr>
+					
+					</tbody>
 					</table>
 				</div>
 			</div>
