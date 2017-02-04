@@ -4,3 +4,10 @@ A “IOT - smarthome” project uses web page which installed on raspberry to co
 
 DEMO:
 https://limin-liu.github.io/BureauIntelligent/
+
+
+
+
+
+
+An IOT project created on November 30, 2016, 14:29 .
