@@ -48,8 +48,8 @@ Installer web environment in raspberry PI
 * PHP
 
          sudo apt-get install php5 libapache2-mod-php5 php5-gd
-         
-
+  
+    
 Move the file to the defaut path of apache
 
       mv -r -f  BureauIntelligent  ./var/www/html/
@@ -67,9 +67,7 @@ Load database
       mysql> use bureau;
       mysql> show tables;
       exit
-         
-         
-  
+              
 Login for check the webpage
 
       username: test
