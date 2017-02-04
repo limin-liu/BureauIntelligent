@@ -61,12 +61,13 @@ Customize database
       
 Load database
 
-         $ mysql -u [username] -p [password]
-         mysql> show databases; 
-         mysql> use bureau;
-         mysql> show tables;
-         exit
-         mysql> source /var/www/html/BureauIntelligent/webpage/rasp_database.sql
+      $ mysql -u [username] -p [password]
+      mysql> source /var/www/html/BureauIntelligent/webpage/rasp_database.sql
+      mysql> show databases; 
+      mysql> use bureau;
+      mysql> show tables;
+      exit
+         
          
   
 Login for check the webpage
