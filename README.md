@@ -38,16 +38,16 @@ Installer web environment in raspberry PI
 
 * Apache
 
-      sudo apt-get install apache2
-      sudo service apache2 restart
+         sudo apt-get install apache2
+         sudo service apache2 restart
       
 * Mysql
 
-      sudo apt-get install mysql-server
+         sudo apt-get install mysql-server
       
 * PHP
 
-
+         sudo apt-get install php5 libapache2-mod-php5
 
 
 Customize database
