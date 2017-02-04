@@ -2,8 +2,10 @@ BureauIntelligent
 ==========
 
 >An “IOT - smarthome” project uses web page which installed on raspberry to control arduino and sensor device 
+   
 
 
+ 
 Demo:
 -------
 
@@ -25,4 +27,8 @@ Architecture
 
 ![Architecture Conception](https://github.com/limin-liu/BureauIntelligent/blob/master/Architecture%20constitution.jpg "Architecture Conception")
 
+
+  
+  
+ </br></br> 
 An IOT project created on November 30, 2016, 14:29 .
