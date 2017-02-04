@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0">
+
+<title>Dust and Particles Sensor Data</title>
+
+
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
+<script type="text/javascript" language="javascript" src="js/jquery_v1.12.4.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.dataTables.js"></script>
+<script type="text/javascript" language="javascript" class="init">
+
+$(document).ready(function() {
+$('#Temperature').dataTable( {
+	"aaSorting": [ [0,'asc'], [1,'desc'] ],
+	"aProcessing": true,
+	"aServerSide": true,
+	"ajax": "tableDust.php",
+} );
+
+$('#Temperature').each(function(){
+				var datatable = $(this);
+				// SEARCH - Add the placeholder for Search and Turn this into in-line form control
+				var search_input = datatable.closest('.dataTables_wrapper').find('div[id$=_filter] input');
+				search_input.attr('placeholder', 'Search');
+				search_input.addClass('form-control input-sm');
+				// LENGTH - Inline-Form control
+				var length_sel = datatable.closest('.dataTables_wrapper').find('div[id$=_length] select');
+				length_sel.addClass('form-control input-sm');
+			});
+} );
+
+</script>
+</head>
+
+<body class="dt-Temperature">
+	
+	<div class="container">
+		<div class="panel-heading">
+		
+			<div class="row">
+				<h2 class="text-center">Dust and particles sensor readings</h2>
+			</div>
+		</div>
+		
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-md-8 col-sm-offset-2">
+            
+					<table id="Temperature" class="table table-hover table-striped table-bordered text-center table-list" cellspacing="0" width="100%" style="border-radius: 5px;">
+					<thead>
+					<tr>
+					<th class="text-center">Date</th>
+					<th class="text-center">Time</th>
+					<th class="text-center">Temperature(particules/litre)</th>
+					
+					</tr>
+					</thead>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
