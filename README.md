@@ -36,16 +36,35 @@ Installation
 
 Installer web environment in raspberry PI
 
+* Apache
+
+      sudo apt-get install apache2
+      sudo service apache2 restart
+      
+* Mysql
+
+      sudo apt-get install mysql-server
+      
+* PHP
+
+
+
 
 Customize database
       
       Define the configuration options in the /webpage/connection.php
       
 Load database
+   
+      $ mysql -u [username] -p [password]
+      mysql> source /var/www/html/BureauIntelligent/webpage/rasp_database.sql
+      mysql> show databases; 
+      mysql> use bureau;
+      mysql> show tables;
+      exit
       
-      mysql -u [username] -p [password]
-      source /var/www/html/BureauIntelligent/webpage/rasp_database.sql
-      
+
+
 
   
  </br></br> 
