@@ -60,15 +60,14 @@ Customize database
       Define the configuration options in the /webpage/connection.php
       
 Load database
-   
-      $ mysql -u [username] -p [password]
-      mysql> source /var/www/html/BureauIntelligent/webpage/rasp_database.sql
-      mysql> show databases; 
-      mysql> use bureau;
-      mysql> show tables;
-      exit
-  
-  
+
+         $ mysql -u [username] -p [password]
+         mysql> show databases; 
+         mysql> use bureau;
+         mysql> show tables;
+         exit
+         mysql> source /var/www/html/BureauIntelligent/webpage/rasp_database.sql
+         
   
 Login for check the webpage
 
