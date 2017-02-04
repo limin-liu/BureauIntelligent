@@ -29,9 +29,54 @@ Architecture
 
 Function
 --------
+* Hardware
 
-
-Installation   
+ * Temperature and humidity sensors
+ 
+      > Use the wifi module ESP8266 to send the value detected by DHT22 sensor to the raspberry pi. We use the way of [http get] to      sent the data directly to the "add.php" than write its in the mysql database.
+      
+ * light
+ 
+      > Use json to get the order from webpage then control the on and off of light
+ 
+ 
+ * Software
+  
+  * login
+  
+      > for entry into the main page, you need first login
+  
+  * toolbar
+  
+      > click to jump to the position of different module in the main user homepage
+      
+  * Health Care System   
+  
+      >
+      
+  * graph 
+  
+      >
+      
+  * table
+  
+      >
+      
+  * ahout us
+  
+      >
+      
+  * feedback
+  
+      >
+      
+  * logout
+  
+      >
+ 
+ 
+ 
+Installation   
 -------------
 
 Installer web environment in raspberry PI
@@ -48,6 +93,7 @@ Installer web environment in raspberry PI
 * PHP
 
          sudo apt-get install php5 libapache2-mod-php5 php5-gd
+  
   
     
 Move the file to the defaut path of apache
@@ -73,7 +119,11 @@ Login for check the webpage
       username: test
       password: test
 
+License
+--------
+[Apache License](https://github.com/limin-liu/BureauIntelligent/blob/master/LICENSE) 
 
-  
- </br></br> 
+
+
+ </br></br></br> 
 An IOT project created on November 30, 2016, 14:29 .
