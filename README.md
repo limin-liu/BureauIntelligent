@@ -35,44 +35,47 @@ Function
  
       > Use the wifi module ESP8266 to send the value detected by DHT22 sensor to the raspberry pi. We use the way of [http get] to      sent the data directly to the "add.php" than write its in the mysql database.
       
- * light
+ * Light
  
       > Use json to get the order from webpage then control the on and off of light
- 
- 
- * Software
+
+* Software
   
-  * login
+  * Login
   
-      > for entry into the main page, you need first login
+      > For entry into the main page, you need first login
+      
+  * Auto Refresh
   
-  * toolbar
+      > The home page will auto refresh every 5min and reload the real time value of the sensors.
+       
+  * Toolbar
   
-      > click to jump to the position of different module in the main user homepage
+      > Click to jump to the position of different module in the main user homepage
       
   * Health Care System   
   
-      >
-      
-  * graph 
+      > The height of the thermometer mercury column, the number of dust particles, and the opacity of the skull will be used to visually represent the temperature, the dust density and the carbon monoxide(CO) concentration. so each time either you refresh by hand or the webpage refresh automatic, it will update the sensors' value here. 
+       
+  * Graph 
   
-      >
-      
-  * table
+      > There is a hide/show botton below the icon of thermometer, it will show a carousel which iclude the curve of temperature、 humidity、dust、CO. But the graph is limited to the last 30 time points.
+     
+  * Table
   
-      >
-      
-  * ahout us
+      > If you want to check all the data of every sensor. You can click the link above the each symbol in the "Health Care System" to go to the data table. The data table page allow you to search a day、time、value particular and choose the way of value's rank. 
+   
+  * About Us
   
-      >
+      > This part post the photo of members of our group.
       
-  * feedback
+  * Feedback
   
-      >
-      
-  * logout
+      > There is a feedback form for user to report bug or submit advice.
+    
+  * Logout
   
-      >
+      > In the field "me" in the toolbar, you can find option of "déconnexion", click for logout. And you wait for 5s, you will be redirected to the login page.
  
  
  
@@ -98,6 +101,8 @@ Installer web environment in raspberry PI
     
 Move the file to the defaut path of apache
 
+      rename the floder webpage to BureauIntelligent
+      
       mv -r -f  BureauIntelligent  ./var/www/html/
 
 
