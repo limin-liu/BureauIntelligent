@@ -55,7 +55,7 @@ Function
       
   * Health Care System   
   
-      > The height of the thermometer mercury column, the number of dust particles, and the opacity of the skull will be used to visually represent the temperature, the dust density and the carbon monoxide(CO) concentration. so each time either you refresh by hand or the webpage refresh automatic, it will update the sensors' value here. 
+      > The height of the thermometer mercury column, the number of dust particles, and the opacity of the skull will be used to visually represent the temperature, the dust density and the carbon monoxide(CO) concentration. so each time either you refresh by hand or the webpage refresh automatic, it will update the sensors' value here. 
        
   * Graph 
   
@@ -130,5 +130,6 @@ License
 
 
 
- </br></br></br> 
+
+ </br></br></br></br>
 An IOT project created on November 30, 2016, 14:29 .
