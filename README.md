@@ -1,7 +1,7 @@
 BureauIntelligent
 ==========
 
->_An “IOT - smarthome” project uses web page which installed on raspberry to control arduino and sensor device_ 
+>_An “IOT - SmartHome” project uses web page which installed on raspberry to control arduino and sensor device_ 
    
 
 
@@ -101,6 +101,8 @@ Installer web environment in raspberry PI
     
 Move the file to the defaut path of apache
 
+      ftp the floder webpage on raspberry Pi
+      
       rename the floder webpage to BureauIntelligent
       
       mv -r -f  BureauIntelligent  ./var/www/html/
@@ -108,21 +110,60 @@ Move the file to the defaut path of apache
 
 Customize database
       
-      Define the configuration options in the /webpage/connection.php
+      Define the configuration options in the /BureauIntelligent/connection.php
       
 Load database
 
       $ mysql -u [username] -p [password]
-      mysql> source /var/www/html/BureauIntelligent/webpage/rasp_database.sql
+      mysql> source /var/www/html/BureauIntelligent/rasp_database.sql
       mysql> show databases; 
       mysql> use bureau;
       mysql> show tables;
       exit
-              
+
+Go to the site
+
+      localhost/BureauIntelligent/  
+      
+   or  
+      
+      192.168.xx.xx(Intranet ip of pi)/BureauIntelligent/
+
 Login for check the webpage
 
       username: test
       password: test
+      
+Use ngrok for Intranet penetration
+
+* view ngrok
+
+  https://ngrok.com/
+
+* What is ngrok
+
+  Ngrok allows you to expose a web server running on your local machine to the internet.
+  
+![ngrok theory](https://ngrok.com/static/img/demo.png "ngrok theory")
+
+* Start up
+
+         Download ngrok for LINUX ARM
+      
+         cd /path/to/download_ngrok
+      
+         unzip ngrok-stable-linux-arm.zip
+      
+         ./ngrok http 80
+         
+* Have fun
+
+  You will find an URL just like   ___http://<i></i>92832de0.ngrok.io___   in your terminal. So you can use this URL to let the devices who are not in your local network also Visit this site。
+   
+* Note
+
+  You should keep the terminal always open. Otherwise the URL will lose effectiveness.
+  
 
 License
 --------
@@ -131,5 +172,6 @@ License
 
 
 
- </br></br></br></br>
+ 
+</br></br></br></br>
 An IOT project created on November 30, 2016, 14:29 .
