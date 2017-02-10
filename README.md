@@ -128,7 +128,7 @@ Go to the site
       【or】 
       
       
-      192.168.xx.xx(Intranet ip of pi)/BureauIntelligent/
+      192.168.xx.xx(Intranet ip of raspberry pi)/BureauIntelligent/
 
 Login for check the webpage
 
@@ -159,7 +159,7 @@ Use ngrok for Intranet penetration
          
 * Have fun
 
-  You will find an URL just like   ___http://<i></i>92832de0.ngrok.io___   in your terminal. So you can use this URL to let the devices who are not in your local network also Visit this site。
+ You will find an URL just like   ___http://<i></i>92832de0.ngrok.io___   in your terminal. So you can use this URL to let the devices who are not in your local network also Visit this site。
    
 * Note
 
