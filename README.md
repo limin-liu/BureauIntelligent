@@ -125,7 +125,8 @@ Go to the site
 
       localhost/BureauIntelligent/  
       
-   or  
+      【or】 
+      
       
       192.168.xx.xx(Intranet ip of pi)/BureauIntelligent/
 
